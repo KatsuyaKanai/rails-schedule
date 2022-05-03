@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_many :posts
+  
   User.count
   
   validates :title,presence: true
