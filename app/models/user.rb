@@ -3,6 +3,7 @@ class User < ApplicationRecord
   
   User.count
   
+  
   validates :title,presence: true
   validates :startDate, presence: true
   validates :endDate, presence: true
