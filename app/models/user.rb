@@ -1,7 +1,8 @@
 class User < ApplicationRecord
   has_many :posts
+
   User.count
-  
+
   validates :title,presence: true
   validates :startDate, presence: true
   validates :endDate, presence: true
@@ -18,5 +19,3 @@ class User < ApplicationRecord
     endDate.nil? ||self.endDate < Date.today
   end
   end
-
-
